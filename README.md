@@ -37,7 +37,7 @@ I have implemented two different options to limit the list of possible export co
 
 - with a property on type level
 
-Define a custom property on type level
+Define a custom property on type level. Set the Export Configurations to the once you usually select in the Gateway. 
 ```
 Name:  Gateway.Configurations
 Value: <Export Configuration1>,<Export Configuration2>,<Export Configuration3>  (Hint: you need to have at least 2 configs listed here)
@@ -55,6 +55,11 @@ t.b.d.
 - The custom form should open
 - Start the Gateway with a click at the [Generate] button
 - Then review the outcome
+
+## How to debug
+- check the log file in your %temp% folder: IntegrityCustomGateway_2017-09-27.log
+- check the standard log file in your Integrity client "bin" directory: Gateway.log 
+- check the standard log file in your Integrity client "bin" directory: GatewayApp.log 
 
 ##  Development environment
 - PTC Integrity LM 10.9 (also 11.0 should be fine)
