@@ -34,13 +34,18 @@ parameter: -jar <your shared folder>/IntegrityCustomGateway.jar
 
 ## Configuration
 I have implemented two different options to limit the list of possible export configurations
-a) with a property on type level
+
+- with a property on type level
+
 Define a custom property on type level
+```
 Name:  Gateway.Configurations
 Value: <Export Configuration1>,<Export Configuration2>,<Export Configuration3>  (Hint: you need to have at least 2 configs listed here)
-
-b) with an additional XML file on server
+´´´
+- with an additional XML file on server
+```
 t.b.d.
+´´´
 
 
 ## How to test
