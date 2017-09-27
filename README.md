@@ -41,11 +41,12 @@ Define a custom property on type level
 ```
 Name:  Gateway.Configurations
 Value: <Export Configuration1>,<Export Configuration2>,<Export Configuration3>  (Hint: you need to have at least 2 configs listed here)
-´´´
+```
+
 - with an additional XML file on server
 ```
 t.b.d.
-´´´
+```
 
 
 ## How to test
