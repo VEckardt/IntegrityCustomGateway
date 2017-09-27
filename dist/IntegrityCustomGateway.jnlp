@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="IntegrityCustomGateway.jnlp">
+  <information>
+    <title>IntegrityCustomGateway</title>
+    <vendor>veckardt</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="IntegrityCustomGateway.jar" size="56433" download="eager" />
+    <jar href="lib/IntegrityAPI.jar" size="121417" download="eager" />
+    <jar href="lib/jfxmessagebox-1.1.0.jar" size="33430" download="eager" />
+    <jar href="lib/mksapi.jar" size="1462072" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="IntegrityCustomGateway" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="customgateway.CustomGateway"  name="IntegrityCustomGateway" />
+  <update check="always"/>
+</jnlp>

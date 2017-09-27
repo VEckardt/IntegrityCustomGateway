@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="454.0" prefWidth="647.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="customgateway.CustomGatewayController">
+  <children>
+    <ProgressBar fx:id="progressBar" prefWidth="200.0" progress="0.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="64.0" />
+    <VBox prefHeight="371.0" prefWidth="530.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="27.0">
+      <children>
+        <Label prefWidth="497.0" text="Choose an appropriate configuration to generate the file">
+          <VBox.margin>
+            <Insets bottom="2.0" top="10.0" />
+          </VBox.margin>
+        </Label>
+        <Label fx:id="lDocument" onMouseClicked="#bOpenOfficeFile" text="Label" textFill="#5200ff">
+          <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+          </VBox.margin>
+        </Label>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+          <children>
+            <Label text="in directory:">
+              <HBox.margin>
+                <Insets bottom="10.0" right="10.0" />
+              </HBox.margin>
+            </Label>
+            <Label id="directoryName" fx:id="lDirectoryName" onMouseClicked="#bChangeDir" text="Directory Name">
+              <HBox.margin>
+                <Insets bottom="10.0" />
+              </HBox.margin>
+            </Label>
+          </children>
+          <VBox.margin>
+            <Insets bottom="15.0" top="2.0" />
+          </VBox.margin>
+        </HBox>
+        <HBox prefHeight="29.0" prefWidth="530.0">
+          <children>
+            <Label text="Configuration:" />
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+          </children>
+          <padding>
+            <Insets bottom="5.0" />
+          </padding>
+        </HBox>
+        <ChoiceBox fx:id="cbConfig" maxWidth="1.7976931348623157E308" prefWidth="530.0" VBox.vgrow="ALWAYS">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+          <VBox.margin>
+            <Insets bottom="20.0" fx:id="x1" />
+          </VBox.margin>
+        </ChoiceBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+          <children>
+            <VBox prefHeight="98.0" prefWidth="269.5" HBox.hgrow="NEVER">
+              <children>
+                <CheckBox fx:id="setAsDefault" mnemonicParsing="false" text="Set as default configuration" />
+                <CheckBox id="includeParentage" fx:id="showParentage" mnemonicParsing="false" text="Show Parentage">
+                  <VBox.margin>
+                    <Insets bottom="10.0" />
+                  </VBox.margin>
+                </CheckBox>
+                <CheckBox id="includeParentage" fx:id="cbGeneratePDF" mnemonicParsing="false" text="Generate PDF file" />
+                <CheckBox fx:id="openInWord" mnemonicParsing="false" prefWidth="269.5" selected="true" text="Open in MS Office automatically">
+                  <VBox.margin>
+                    <Insets />
+                  </VBox.margin>
+                </CheckBox>
+              </children>
+            </VBox>
+            <VBox prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS">
+              <children>
+                <CheckBox id="cbLeaveOpen" fx:id="cbKeepOpen" mnemonicParsing="false" text="Keep open after generation" />
+                <CheckBox id="substParams" fx:id="cbSubstituteParameters" disable="false" mnemonicParsing="false" text="Substitute Parameters" visible="false" />
+                <Label text="Label:" />
+                <ChoiceBox fx:id="cbLabel" maxWidth="1.7976931348623157E308" prefWidth="230.0">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ChoiceBox>
+              </children>
+              <HBox.margin>
+                <Insets left="30.0" />
+              </HBox.margin>
+            </VBox>
+          </children>
+          <VBox.margin>
+            <Insets bottom="20.0" fx:id="x1" />
+          </VBox.margin>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+          <children>
+            <Pane prefHeight="94.0" prefWidth="101.0" HBox.hgrow="ALWAYS" />
+            <Button maxWidth="127.0" minWidth="127.0" mnemonicParsing="false" onAction="#cancelAction" prefWidth="127.0" text="Cancel" HBox.hgrow="NEVER" />
+            <Pane prefHeight="100.0" prefWidth="69.0" HBox.hgrow="NEVER" />
+            <Button maxWidth="127.0" minWidth="127.0" mnemonicParsing="false" onAction="#generateAction" prefWidth="127.0" text="Generate" HBox.hgrow="NEVER" />
+            <Pane prefHeight="94.0" prefWidth="127.0" HBox.hgrow="ALWAYS" />
+          </children>
+          <VBox.margin>
+            <Insets top="10.0" />
+          </VBox.margin>
+        </HBox>
+      </children>
+    </VBox>
+    <Label fx:id="clock" onMouseClicked="#bOpenLogFile" text="Time" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="17.0" />
+    <Label id="HostAndPort" fx:id="lHostAndPort" text="HostAndPort" textFill="#bfbfbf" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="6.0">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
