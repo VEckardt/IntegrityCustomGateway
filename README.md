@@ -75,6 +75,7 @@ File location:   public_html/Custom-Gateway-Configurations.xml
 ## Hints
 - the target directory can be changed just by clicking at the folder name in the user form
 - the form can be left open by activating [x] keep open after generation. This is also very helpful for developers of the layout where the generation process must be started multiple times 
+- the PDF generation uses an included VBA script, called directly form Java. This VBA script opens an MS Word connection, opens the file and saves it as PDF.
 
 ## How to debug
 - check the log file in your %temp% folder: IntegrityCustomGateway_2017-09-27.log
