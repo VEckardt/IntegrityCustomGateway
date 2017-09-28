@@ -73,7 +73,8 @@ File location:   public_html/Custom-Gateway-Configurations.xml
 - Then review the outcome
 
 ## Hints
-- the target folder can be changed just by clicking at the folder name in the user form
+- the target directory can be changed just by clicking at the folder name in the user form
+- the form can be left open by activating [x] keep open after generation. This is also very helpful for developers of the layout where the generation process must be started multiple times 
 
 ## How to debug
 - check the log file in your %temp% folder: IntegrityCustomGateway_2017-09-27.log
