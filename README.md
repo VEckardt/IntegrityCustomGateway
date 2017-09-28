@@ -20,7 +20,7 @@ Option 1: In IntegrityClient folder
 - Copy also the files "dist/lib/IntegrityAPI.jar" and "dist/lib/jfxmessagebox-1.1.0.jar" into your IntegrityClient/lib folder
 - Add a custom menu entry with:
 ```
-name: Custopm Gateway
+name: Custom Gateway
 program:  ../jre/bin/javaw.exe
 parameter: -jar ../IntegrityCustomGateway.jar
 ```
@@ -45,8 +45,23 @@ Description: (Custom) List of Standard Gateway Export Configurations to display 
 ```
 
 - with an additional XML file on server
+
+Alternatively, you can also put the to-be-displayed Export Configurations by type into a custom XML file on server
+
+File location:   public_html/Custom-Gateway-Configurations.xml
 ```
-t.b.d.
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations version="1.3">
+   <!-- configs are used for the Custom Gateway Export process -->
+   <!-- see IntegrityCustomGateway -->
+      <typedef type="Requirement Document">
+         <configs>
+            <config>Sample MS Word Exporter -- with TOC page</config>
+            <config>Dynamic-Document-Landscape</config>
+            <config>Trace Document</config>
+         </configs>
+      </typedef>
+</configurations>
 ```
 
 
