@@ -41,6 +41,7 @@ Define a custom property on type level. Set the Export Configurations to the onc
 ```
 Name:  Gateway.Configurations
 Value: <Export Configuration1>,<Export Configuration2>,<Export Configuration3>  (Hint: you need to have at least 2 configs listed here)
+Description: (Custom) List of Standard Gateway Export Configurations to display for this type in the Pick List
 ```
 
 - with an additional XML file on server
