@@ -72,6 +72,9 @@ File location:   public_html/Custom-Gateway-Configurations.xml
 - Start the Gateway with a click at the [Generate] button
 - Then review the outcome
 
+## Hints
+- the target folder can be changed just by clicking at the folder name in the user form
+
 ## How to debug
 - check the log file in your %temp% folder: IntegrityCustomGateway_2017-09-27.log
 - check the standard log file in your Integrity client "bin" directory: Gateway.log 
@@ -83,4 +86,5 @@ File location:   public_html/Custom-Gateway-Configurations.xml
 - Java 1.7 (or 1.8)
 
 ## Known Limitations
-- none
+- the PDF export will only work for MS Word
+- the PDF export requires a local MS Word 2010 installed
