@@ -78,6 +78,7 @@ File location:   public_html/Custom-Gateway-Configurations.xml
 - the PDF generation uses an included VBA script, called directly form Java. This VBA script opens an MS Word connection, opens the file and saves it as PDF.
 
 ## How to debug
+- if the custom form does not open, add a "cmd /c " in front and a " & pause" at the end of the Custom menu entry. This should open an additional CMD window where logging details will be printed 
 - check the log file in your %temp% folder: IntegrityCustomGateway_2017-09-27.log
 - check the standard log file in your Integrity client "bin" directory: Gateway.log 
 - check the standard log file in your Integrity client "bin" directory: GatewayApp.log 
