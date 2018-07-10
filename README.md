@@ -90,4 +90,4 @@ File location:   public_html/Custom-Gateway-Configurations.xml
 
 ## Known Limitations
 - the PDF export will only work for MS Word
-- the PDF export requires a local MS Word 2010 installed
+- the PDF export requires a local MS Word 2010/ MS Word 2016 installed
