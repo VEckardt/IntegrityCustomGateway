@@ -16,7 +16,7 @@ public class Copyright {
     public static String programName = "Integrity Custom Gateway";
     public static String programVersion = "0.9.4";
     public static String author = "Author: Volker Eckardt";
-    public static String email = "email: veckardt@ptc.com";
+    public static String email = "email";
 
     public static void write() {
         System.out.println("* " + programName + " - Version " + programVersion);
